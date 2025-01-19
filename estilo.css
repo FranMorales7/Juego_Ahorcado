@@ -1,0 +1,120 @@
+/* Estilos básicos del cuerpo */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Se encontrara centrado */
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ambos botones tendran el mismo color y transformaciones al pasar el cursor */
+#enviarNivel, #enviarLetra{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    transition: transform 0.3s ease;
+}
+
+#enviarNivel:hover, #enviarLetra:hover, #empezar:hover {
+    transform: scale(1.1);
+}
+
+/* Aparecera centrado y con el texto en blanco */
+#cuestionario{
+    color: white;
+    border: 5px solid white;
+    max-width: 500px;
+    height: 135px;
+    padding: 15px;
+    align-items: center;
+    margin-left: 35%;
+}
+
+/* Aparecera centrado y con el borde en blanco */
+#ahorcadoCanvas {
+    border: 4px solid #ffffff;
+    margin: 20px auto;
+    padding: 10px 10px;
+    display: block;
+}
+
+/* Aparecera centrado */
+#palabra {
+    font-size: 24px;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#instrucciones{
+    padding-top: 35px;
+}
+
+#intentos {
+    font-weight: bold;
+}
+
+#letra {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+#ingresos{
+    display: block;
+}
+
+/* Aparecera con un color degradado y con el texto en blanco */
+#enviarLetra, #empezar {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    color: #fff;
+    border: none;
+}
+
+/* Letras en cursiva */
+#letrasPulsadas {
+    font-style: italic;
+}
+
+/* El mensaje aparecera con un centrado y en negrita */
+#mensaje {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Los elementos apareceran centrados en cada pantalla */
+#container{
+    width: 100%;
+    text-align: center;
+}
+
+/* El texto sera blanco */
+#juego{
+    display: none;
+    color: white;
+}
+
+/* Aparecera centrado */
+#empezar{
+    margin-left: 30%;
+}
